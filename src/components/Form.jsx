@@ -1,11 +1,17 @@
 import React from 'react'
-import '../styles/login.css';
+import '../styles/style.css';
 import {FaUser, FaLock, FaEnvelope} from 'react-icons/fa';
 
-const LoginForm = () => {
+const Form = () => {
+
+    const [action, setAction] = useState('');
+    
+    const registerLink = () => {
+        setAction('active');
+    }
+
   return (
     <div className='wrapper'>
-
         {/* Login form */}
         <div className='form-box login'>
             <form action=''>
@@ -24,6 +30,10 @@ const LoginForm = () => {
                     <a href='#'>Forgot password?</a>
                 </div>
                 <button type='submit'>Login</button>
+
+                <div className='register-link'>
+                    <p>Don't have an account? <a href='#' onClick={registerLink}>Register</a></p>
+                </div>
             </form>
         </div>
 
@@ -34,6 +44,10 @@ const LoginForm = () => {
                 <div className='input-box'>
                     <input type='text' placeholder='Username' required />
                     <FaUser className='icon' />
+                </div>
+                <div className='input-box'>
+                    <input type='email' placeholder='Email' required />
+                    <FaEnvelope className='icon' />
                 </div>
                 <div className='input-box'>
                     <input type='password' placeholder='Password' required />
@@ -51,4 +65,4 @@ const LoginForm = () => {
   )
 }
 
-export default LoginForm
+export default Form;
