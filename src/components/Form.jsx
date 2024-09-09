@@ -1,4 +1,4 @@
-import React from 'react'
+import {React, useState} from 'react'
 import '../styles/style.css';
 import {FaUser, FaLock, FaEnvelope} from 'react-icons/fa';
 
@@ -10,8 +10,12 @@ const Form = () => {
         setAction('active');
     }
 
+    const loginLink = () => {
+        setAction('');
+    }
+
   return (
-    <div className='wrapper'>
+    <div className={`wrapper${action}`}>
         {/* Login form */}
         <div className='form-box login'>
             <form action=''>
@@ -55,10 +59,12 @@ const Form = () => {
                 </div>
 
                 <div className='remember-forgot'>
-                    <label><input type='checkbox' />Remember me</label>
-                    <a href='#'>Forgot password?</a>
+                    <label><input type='checkbox' />I agree to the terms & conditions</label>
                 </div>
-                <button type='submit'>Login</button>
+                <button type='submit'>Register</button>
+                <div className='register-link'>
+                    <p>Already have an account? <a href='#' onClick={loginLink}>Login</a></p>
+                </div>
             </form>
         </div>
     </div>

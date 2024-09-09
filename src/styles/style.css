@@ -5,13 +5,25 @@
     background: rgb(144, 130, 239);
     border-radius: 40px;
     color: #fff;
+    display: flex;
+    align-items: center;
 }
 .wrapper .form-box{
     width: 100%;
     padding: 40px;
 }
+.wrapper.active .form-box.register{
+    transition: translate .18s ease;
+    translate: 0;
+}
+.wrapper .form-box.login{
+    position: absolute;
+    translate: -400px;
+}
 .wrapper .form-box.register{
     position: absolute;
+    transition: none;
+    translate: 400px;
 }
 form h1{
     font-size: 36px;
