@@ -13,7 +13,7 @@ const LoginForm = () => {
                     <FaUser className='icon' />
                 </div>
                 <div className='input-box'>
-                    <input type='password' placeholder='password' required />
+                    <input type='password' placeholder='Password' required />
                     <FaLock className='icon' />
                 </div>
 
