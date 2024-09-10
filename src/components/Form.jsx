@@ -7,7 +7,7 @@ const Form = () => {
     const [action, setAction] = useState('');
     
     const registerLink = () => {
-        setAction('active');
+        setAction(' active');
     }
 
     const loginLink = () => {

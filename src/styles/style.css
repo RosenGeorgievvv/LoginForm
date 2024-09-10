@@ -2,7 +2,11 @@
     position: relative;
     width: 420px;
     height: 450px;
-    background: rgb(144, 130, 239);
+    background: transparent;
+    border: 5px solid rgba(255, 255, 255, 0.541);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
     border-radius: 40px;
     color: #fff;
     display: flex;
@@ -109,3 +113,7 @@ form .register-link{
 .register-link p a:hover{
     text-decoration: underline;
 }
+
+
+/* Media query for mobile devices */
+
