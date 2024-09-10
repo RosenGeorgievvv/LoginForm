@@ -1,8 +1,3 @@
-# React + Vite
+# Project Overview
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project is a simple Login and Register Form built with ReactJS. It provides basic user authentication features, allowing users to register and log in. The project demonstrates form handling, input validation, state management, and routing in a React application. This template can serve as a starting point for integrating a backend system for complete authentication and session management.
