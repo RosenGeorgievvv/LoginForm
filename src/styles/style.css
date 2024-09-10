@@ -7,17 +7,22 @@
     color: #fff;
     display: flex;
     align-items: center;
+    overflow: hidden;
+    transition: height .2s ease;
+}
+.wrapper.active{
+    height: 520px;
 }
 .wrapper .form-box{
     width: 100%;
     padding: 40px;
 }
-.wrapper.active .form-box.register{
-    transition: translate .18s ease;
-    translate: 0;
+.wrapper .form-box.register{
+   transition:  translate .18s ease;
+   translate: 0;
 }
-.wrapper .form-box.login{
-    position: absolute;
+.wrapper.active .form-box.login{
+    transition: none;
     translate: -400px;
 }
 .wrapper .form-box.register{
@@ -25,6 +30,12 @@
     transition: none;
     translate: 400px;
 }
+.wrapper.active .form-box.register{
+    transition: translate .18s ease;
+    translate: 0;
+}
+
+
 form h1{
     font-size: 36px;
     text-align: center;
